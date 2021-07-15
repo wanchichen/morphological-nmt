@@ -26,8 +26,7 @@ Our entire pipeline can be run with:
 python pipeline.py
 ```
 The pipeline can take in several flags:
- - `--segment_type` can be `none`, `bpe`,`unigram`, `prpe`, `prpe_bpe`, `prpe_multi`.
- - `--prpe_multi_runs` is used to set the number of iterations to run the `prpe_multi`(Multi-PRPE). Default value is 5.
+ - `--src_segment_type` and `--tgt_segment_type` can be `none`, `bpe`,`unigram`, `prpe`, `prpe_bpe`, `prpe_multiN` (where N is number of iterations).
  - `--model_type` can be `rnn`(aka LSTM) or `transformer`. Defaults to LSTM.
  - `--in_lang` specifies the input language to be translated. We used `qz` for Quechua and `id` for Indonesian. Defaults to Quechua.
  - `--out_lang` specifies the output language to be translated to. We used `es` for Spanish and `en` for English. Defaults to Spanish.
@@ -45,5 +44,6 @@ The pipeline can take in several flags:
  - `--validate_steps` specifies how often the model should be evaluated against the validation set. Default is every 2000 steps.
  - `--batch_size` is the batch size for training. Default is 64.
  - `--filter_too_long` specifies the max token length of a line in the training set. Any line that passes this value is filtered out. Default is no filtering.
+ - `--src_token_lang` and `--tgt_token_lang` specifies the tokenization language Moses uses. We use `es` for both languages in QZ-ES, and `en` for ID-EN.
  
 The pipeline will automatically test the model after training is finished and output a BLEU and CHRF score.
