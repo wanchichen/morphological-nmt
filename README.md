@@ -1,6 +1,6 @@
 # Morphologically-Guided Neural Machine Translation
 
-This is the code used for our LoResMT 2021 Paper [Morphologically-Guided Segmentation For Translation of Agglutinative Low-Resource Languages](). This repository contains the implementations of the subword segmentation algorithms we used, along with the pipeline of how our model is run.
+This is the code used for our LoResMT 2021 Paper [Morphologically-Guided Segmentation For Translation of Agglutinative Low-Resource Languages](). This repository contains the implementations of the subword segmentation algorithms we used and the cleaned Quechua dataset, along with the pipeline of how our model is run.
 
 ## Dependencies
 ```
