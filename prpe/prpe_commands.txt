@@ -1,0 +1,5 @@
+python prpe6/learn_prpe.py -i ../data/train.qu.txt -p codefiles-qz/prefixes.qz -r codefiles-qz/roots.qz -s codefiles-qz/suffixes.qz -t codefiles-qz/postfixes.qz -u codefiles-qz/endings.qz -w codefiles-qz/words.qz -a 32 -b 500 -c 500 -v 500 -l qz
+
+
+python prpe6/apply_prpe.py -i ../data/test.qu.txt -o codefiles-qz/output.txt -p codefiles-qz/prefixes.qz -r codefiles-qz/roots.qz -s codefiles-qz/suffixes.qz -t codefiles-qz/postfixes.qz -u codefiles-qz/endings.qz -w codefiles-qz/words.qz -l qz -d 0003
+
