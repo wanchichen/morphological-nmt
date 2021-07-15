@@ -11,8 +11,8 @@ pip install requirements.txt
  - Originally from [Semi-automatic Quasi-morphological Word Segmentation for Neural Machine Translation](https://link.springer.com/chapter/10.1007/978-3-319-97571-9_23)
  - The base code for PRPE was taken from https://github.com/zuters/prpe.
  - Samples of the heuristics, separated out from the main algorithm for convenience, can be accessed below:
-    -  [Quechua Heuristic](https://github.com/smaint/PRPE-Translator/blob/main/qz_heuristic.py) 
-    -  [Indonesian Heuristic](https://github.com/smaint/PRPE-Translator/blob/main/id_heuristic.py)
+    -  [Quechua Heuristic](https://github.com/wanchichen/morphological-nmt/blob/main/qz_heuristic.py) 
+    -  [Indonesian Heuristic](https://github.com/wanchichen/morphological-nmt/blob/main/id_heuristic.py)
     -  The generic heuristic (the general parameters of PRPE) can be found [here](https://github.com/smaint/PRPE-Translator/blob/main/generic_heuristic.py)
 
 ## Datasets
