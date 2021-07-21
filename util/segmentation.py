@@ -20,7 +20,7 @@ def bpe(input, output, lang, folder, train=True, apply=True):
     intermediary = f'model_opennmt/run' + folder + f'/bpe_out.{lang}.txt'
 
     if train:
-        train_bpe = ['subword-nmt', 'learn-bpe', '--input', input, '--output', bpe_codes]
+        train_bpe = ['subword-nmt', 'learn-bpe', '-s', '8000','--input', input, '--output', bpe_codes]
         subprocess.run(train_bpe)
 
     if apply:
@@ -73,7 +73,7 @@ def prpe(src, out, lang, FOLDER, train=True, apply=True):
                   '-a', '32',
                   '-b', '500',
                   '-c', '500',
-                  '-v', '500',
+                  '-v', '8000',
                   '-l', f'{lang}']
 
     apply_prpe = ['python', 'prpe/prpe6/apply_prpe.py', 
